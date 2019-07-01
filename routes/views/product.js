@@ -5,10 +5,12 @@ exports = module.exports = function(req, res) {
   const locals = res.locals;
   
   // Set locals
+  
   locals.section = "store";
   locals.filters = {
     product: req.params.product
   }
+  
   locals.data = {
     products: []
   }
@@ -17,12 +19,15 @@ exports = module.exports = function(req, res) {
     const q = keystone.list('Product').model.findOne({
       slug: locals.filters.product
     });
+    locals.title = q.title
+    console.log(q)
     q.exec(function(err, result){
       locals.data.product = result;
+      locals.title = result.title;
       next(err);
     })
   })
   
   // Render view
-  view.render('products')
+  view.render('product')
 } 
