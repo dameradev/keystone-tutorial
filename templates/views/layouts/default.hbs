@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
 		{{{isAdminEditorCSS user}}}
@@ -23,7 +24,44 @@
 	<body>
 		<div id="header">
 			<div class="container">
-				<div role="navigation" class="navbar navbar-default">
+				<nav>
+          <div class="row">
+            <div class="col-md-6 col-md-6">
+              <div class="row logo-wrapper">
+                <div class="col-md-4 col-md-4">
+                  <img  class="circle" src="https://i9.dainikbhaskar.com/thumbnails/680x588/web2images/english.fashion101.in/2016/05/31/001ranveer_1464693862.jpg" alt="">
+                  <h1 class="nav-heading" >Damjan Radev</h1>
+                </div>
+                
+                <a class="emailto-heading col-md-4 col-md-4">radevdamjan@gmail.com</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-6">
+              <div class="row navigation">
+                <div class="col-md-3  col-md-offset-6">
+                  <a href="">Home</a>
+                </div>
+                <div class="col-md-3">
+                  <a href="">About me</a>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                  <a href="">Portfolio</a>
+                </div>
+                <div class="col-md-3">
+                  <a href="">Blog</a>
+                </div>
+                <div class="col-md-3 col-md-offset-6">
+                  <a href="">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        
+        
+        
+        {{!-- <div role="navigation" class="navbar navbar-default">
 					<div class="container-fluid">
 						<div class="navbar-header">
 							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
@@ -49,7 +87,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 		<div id="body">

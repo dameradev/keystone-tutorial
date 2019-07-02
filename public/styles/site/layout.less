@@ -17,20 +17,75 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  border-top: 3px solid #6a8eae; 
+  
   color: #727070;
 }
+
+.logo-wrapper {
+  .nav-heading {
+    margin: 4rem auto;
+  }
+  .emailto-heading {
+    margin: 4rem auto;
+  }
+}
+
+
+.nav-heading {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-left:-1rem;
+}
+
+.emailto-heading {
+  border: 1px solid #727070;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #727070;
+}
+
+.emailto-heading:hover {
+  background: #6a8eae;
+  text-decoration: none;
+  color:white;
+}
+
+.navigation div {
+  margin-top:1.5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  a {
+    text-decoration: none;
+    color: #727070;
+  }
+  a:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #6a8eae;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 8rem;
+  border: 3px solid #6a8eae;
+}
+
 
 .hero-heading { 
   font-style: italic;
   font-weight: 100;
   font-size: 6rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  
 }
 .left-text {
-  padding: 10rem;
-  padding-top: 5rem;
+  
+  padding-top: 1rem;
   text-align: center;
-  margin-left:-7rem;
-  padding-right: 70rem;
+  
+  
   letter-spacing: 0.3rem;
 }
 
@@ -38,7 +93,13 @@ body {
   line-height: 170%;
   letter-spacing: 0.3rem;
   font-weight: 300;
+  padding-left:6rem;
+  padding-right:6rem;
   
+  
+}
+.row {
+  text-align: center;
 }
 
 .button-view-more {
@@ -50,9 +111,77 @@ body {
   border: 1px solid #727070;
   border-radius: 25px;
   font-size:2rem;
+  
 }
+.portoflio-view-more {
+  margin-top: 5rem;
+  border: none;
+  padding: 1.5rem;
+  
+  text-align: left;
+  border: 1px solid #6a8eae;
+  
+  font-size:2rem;
+}
+
+.portoflio-view-more:hover {
+  background: #6a8eae;
+  color: white;
+}
+
+
 
 .button-view-more:hover {
   background: #727070;
   color: white;
 }
+
+.portfolio-wrapper {
+  margin-top:1rem;
+  text-align: center;
+  margin-left: 8rem;
+  
+}
+
+.portfolio-heading {
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 6rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin: 0 auto;
+  
+}
+
+.img-container{
+  background-color: #727070;
+    
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+  text-align: left;
+  .technologies-used {
+    font-weight: 300;
+    font-style: italic;
+  }
+  .card-text {
+    line-height: 180%;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .card-header {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
