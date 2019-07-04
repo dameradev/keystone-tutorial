@@ -71,7 +71,7 @@ body {
   
 }
 .hero-wrapper {
-  border-bottom: #6a8eae solid 3px;
+  // border-bottom: #6a8eae solid 3px;
   padding-bottom: 2rem;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .hero-text {
   line-height: 170%;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.32rem;
   font-weight: 300;
   padding-left:6rem;
   padding-right:6rem;
@@ -114,17 +114,19 @@ body {
   border: 1px solid #727070;
   border-radius: 25px;
   font-size:2rem;
+  transition: all 200ms ease;
+  transition-delay: 200ms;
   
 }
 .portoflio-view-more {
-  margin-top: 5rem;
+  margin-top: 8rem;
   border: none;
   padding: 1.5rem;
-  
   text-align: left;
   border: 1px solid #6a8eae;
-  
   font-size:2rem;
+  transition: all 200ms ease;
+  transition-delay: 200ms;
 }
 
 .portoflio-view-more:hover {
@@ -135,7 +137,8 @@ body {
 
 
 .button-view-more:hover {
-  background: #727070;
+  background: #6a8eae;
+  
   color: white;
 }
 
@@ -162,7 +165,7 @@ body {
 }
 
 .img-container{
-  background-color: #727070;
+  background-color: #6a8eae;
     
 }
 .card:hover {
@@ -190,12 +193,15 @@ body {
 
 
 // PROJECTS
+.my-portfolio-projects-title {
+  color: #6a8eae;
+}
 
 .grid-container { 
+  margin-top:5rem;
   display: grid;
   grid-template-columns: auto auto auto;
-  
-  
+  margin-bottom: 10rem;
 }
 
 .grid-item { 
@@ -204,6 +210,9 @@ body {
   padding: 20px;
   text-align: center;
   color: #777777;
+  // border: 1px solid #6a8eae;
+  transition: all 200ms ease-out;
+  transition-delay: 200ms;
   
   p {
     visibility: hidden;
@@ -218,7 +227,7 @@ body {
 }
 
 .grid-item:hover {
-  background-color: #777777;
+  background-color: #6a8eae;
   color: white;
   p {
     visibility: visible;
@@ -227,8 +236,39 @@ body {
     
   }
 }
+/* Wrap the image and alt text */
+  /* Will be added with js */
+  .alt-wrap { 
+    position: relative;
+  }
 
+/* The alt text itself */
+/* Will be added with js */
+  .alt-wrap  p.alt {
+    position: absolute;
+    opacity: 0; /* hide initially */
+    left: 0; right: 0; bottom: 0; 
+    margin: 0;
+    
+    font-size: 14px;
+    line-height: 22px;
+    background-color: rgba(0,0,0,0.8);
+    transition: all 300ms ease-in;
+    // transition-delay: 300ms;
+  }
 
+  
+
+/* Hovering over the wrapper shows its alt p*/
+.alt-wrap:hover  p {
+  background-color: black;
+  padding: 2rem;
+  opacity: 0.8;
+}
+
+.first-name {
+  color: #6a8eae;
+}
 
 // .projects-wrapper  div{
 //   // margin: 0 auto;
