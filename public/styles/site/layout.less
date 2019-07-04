@@ -35,7 +35,7 @@ body {
 .nav-heading {
   font-weight: 300;
   font-size: 2rem;
-  margin-left:-1rem;
+  
 }
 
 .emailto-heading {
@@ -66,11 +66,14 @@ body {
 }
 
 .circle {
-  border-radius: 50%;
+  
   width: 8rem;
-  border: 3px solid #6a8eae;
+  
 }
-
+.hero-wrapper {
+  border-bottom: #6a8eae solid 3px;
+  padding-bottom: 2rem;
+}
 
 .hero-heading { 
   font-style: italic;
@@ -185,3 +188,66 @@ body {
   }
 }
 
+
+// PROJECTS
+
+.grid-container { 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  
+}
+
+.grid-item { 
+  background-color: white;
+  // border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #777777;
+  
+  p {
+    visibility: hidden;
+    font-weight: 300;
+    font-style: italic;
+  }
+  img {
+    object-fit: cover;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.grid-item:hover {
+  background-color: #777777;
+  color: white;
+  p {
+    visibility: visible;
+  }
+  img {
+    
+  }
+}
+
+
+
+// .projects-wrapper  div{
+//   // margin: 0 auto;
+  
+// }
+// .project {
+//   width: 90%;
+//   background-color: black;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// .project {
+//   display: inline-block;
+//   margin-right: 2.5rem;
+//   background-color: black;
+//   .card {
+//     width: 45rem;
+    
+//   }
+// }
